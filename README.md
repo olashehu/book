@@ -28,19 +28,21 @@ A RESTful API built with NestJS for managing books.
 
 ### Features
 - Create a new book
-* Retrieve all books
-+ Retrieve a book by ID
+- Retrieve all books
+- Retrieve a book by ID
 - Update a book by ID
-* Delete a book by ID
-+ Create a new category
-+ Retrieve all category
+- Delete a book by ID
+- Create a new category
+- Retrieve all category
 
 ### Prerequisites
-+ Node.js (version X.X.X)
-* npm (version X.X.X)
+
+- Node.js (version X.X.X)
+- npm (version X.X.X)
 - postgresql a database
 
 ### Installation
+
 1 Clone the repository:
 ```
 https://github.com/olashehu/book.git
@@ -50,11 +52,13 @@ Clone the repository
 ```bash
 https://github.com/olashehu/book.git
 ```
+
 2 Install dependencies:
 ```
 cd book
 npm install
 ```
+
 3 Configure the environment variables:
 Create a .env file in the project root directory and provide the necessary environment variables:
 ```
@@ -81,11 +85,11 @@ npm run start:dev
 
 ## API Endpoints
 - GET /v1/books - Retrieve all books
-+ GET /v1/books/:id - Retrieve a book by ID
-* POST /v1/books - Create a new book
+- GET /v1/books/:id - Retrieve a book by ID
+- POST /v1/books - Create a new book
 - PUT /v1/books/:id - Update a book
-* DELETE /v1/books/:id - Delete a book
-* POST /v1/categories - Create a new categories
+- DELETE /v1/books/:id - Delete a book
+- POST /v1/categories - Create a new categories
 - GET /v1/categories - Retrieve all categories
 
 ### Request Body To Create A Book
@@ -118,53 +122,56 @@ npm run start:dev
     id: 1,
   },
 }
-
-## Retrieve all books
+```
+### Retrieve all books
 Request
 ```
 GET /v1/books
 ```
 ### Response:
+
 ```
-"books": [
-        {
-            "id": "uqCVG-FA3",
-            "name": "Test book",
-            "author": "Shehu",
-            "price": 1000,
-            "readCount": 0,
-            "viewCount": 0,
-            "description": null,
-            "coverImage": "cover.jpeg",
-            "fileUrl": "home.png",
-            "tags": [],
-            "readTime": 5,
-            "createdAt": "2023-06-04T23:59:42.665Z",
-            "updatedAt": "2023-06-04T23:59:42.665Z"
-        },
-        {
-            "id": "5ZBTTRdvU",
-            "name": "Book 3",
-            "author": "Micheal",
-            "price": 500,
-            "readCount": 0,
-            "viewCount": 0,
-            "description": "Book description 3",
-            "coverImage": "cover.jpeg",
-            "fileUrl": "home.png",
-            "tags": [],
-            "readTime": 2,
-            "createdAt": "2023-06-05T00:14:28.496Z",
-            "updatedAt": "2023-06-05T00:14:28.496Z"
-        },
+books: [
+   {
+     "id": "uqCVG-FA3",
+     "name": "Test book",
+     "author": "Shehu",
+     "price": 1000,
+     "readCount": 0,
+     "viewCount": 0,
+     "description": null,
+     "coverImage": "cover.jpeg",
+     "fileUrl": "home.png",
+     "tags": [],
+     "readTime": 5,
+     "createdAt": "2023-06-04T23:59:42.665Z",
+     "updatedAt": "2023-06-04T23:59:42.665Z"
+  },
+  {
+     "id": "5ZBTTRdvU",
+     "name": "Book 3",
+     "author": "Micheal",
+     "price": 500,
+     "readCount": 0,
+     "viewCount": 0,
+     "description": "Book description 3",
+     "coverImage": "cover.jpeg",
+     "fileUrl": "home.png",
+     "tags": [],
+     "readTime": 2,
+     "createdAt": "2023-06-05T00:14:28.496Z",
+     "updatedAt": "2023-06-05T00:14:28.496Z"
+  },
 ]
 ```
 ### Retrieve a book by ID
 Request
+
 ```
 GET /v1/book/ruhfg-5y8
 ```
 ### Response:
+
 ```
 {
     "id": "PCms5ZZV5",
@@ -190,29 +197,13 @@ GET /v1/book/ruhfg-5y8
 }
 ```
 
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Shehu Abdulkadir]
 
 ## License
 
