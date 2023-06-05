@@ -181,6 +181,7 @@ export class BookService {
   }
 
   async fetchBooks(data) {
+    console.log(data, 'data');
     try {
       const bookQuery = this.bookRepo.createQueryBuilder('book');
 
